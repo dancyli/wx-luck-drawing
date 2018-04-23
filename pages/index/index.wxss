@@ -19,3 +19,18 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.join_btn{
+  position: absolute;
+  bottom: 6%;
+  right: 18%;
+  width: 60%;
+  height: 15%; 
+}
+.details_btn {
+  position: absolute;
+  bottom: 21%;
+  right: 0%;
+  width: 36%;
+  height: 12%;
+}
