@@ -13,8 +13,7 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
-
-function imageUtil(e) {
+const imageUtil = e => {
   var imageSize = {};
   var originalWidth = e.detail.width;//图片原始宽 
   var originalHeight = e.detail.height;//图片原始高 
