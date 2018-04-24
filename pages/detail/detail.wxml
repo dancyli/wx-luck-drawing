@@ -1,6 +1,6 @@
 <view class='container'>
 
-  <image src="../../images/detail_bg.png" bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" ></image>
+  <image src="../../images/detail_bg.png" bindload="imageLoad" style="height: {{imageheight}}px;" ></image>
   <!-- <image class='turntable' src="../../images/turntable.png"></image>
   <image class='draw-btn' src="../../images/draw_btn.png"></image> -->
 
