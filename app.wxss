@@ -21,6 +21,7 @@ input{
   background: #ACD598;
   border-radius: 20rpx; 
   padding-left: 8rpx;
+  color: #fff;
 }
 
 .section{

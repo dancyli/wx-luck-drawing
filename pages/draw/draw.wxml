@@ -26,7 +26,7 @@
       <view wx:else class='modal-result-text is-luck'>
         <view>亲，恭喜你获得</view>
         <view class='prize'>{{detail}}</view>
-        <view class='btn-area'>
+        <view class='btn-area' bindtap="showForm">
           <image src="../../images/take_prize_btn.png"></image>
           <view class='btn-text'>立即领奖</view>
         </view>
@@ -34,26 +34,27 @@
     </view>
   </view>
 
-   <view class='modal-result-luck' style="height: {{imageheight}}px;">
+  <view wx:if="{{showForm}}" class='modal-result-luck' style="height: {{imageheight}}px;">
     <view class='modal-result-content'>
       <image class='modal-result-image' src="../../images/modal_bg_1.png"></image>
       <view class='modal-result-form'>
-        <form bindsubmit="formSubmit" bindreset="formReset">
+        <form bindsubmit="formSubmit">
           <view class="section">
-            <input name="input" placeholder="" />
+            <input name="name" placeholder="" />
             <text class="section__title"><text class='require-label'>*</text> 姓 名：</text>
           </view>
           <view class="section">
-            <input name="input" placeholder="" />
+            <input name="phone" placeholder="" />
             <text class="section__title"><text class='require-label'>*</text> 手 机：</text>
           </view>
           <view class="section">
-            <input name="input" placeholder="" />
+            <input name="address" placeholder="" />
             <text class="section__title"><text class='require-label'>*</text> 地 址：</text>
           </view>
           <view class="form-btn-area">
             <button formType="submit">完成</button>
           </view>
+          <view class='error-warn' wx:if="{{!validate}}">{{ formWarn }}</view>
         </form>
       </view>
     </view>

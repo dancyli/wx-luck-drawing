@@ -109,11 +109,17 @@ input{
 }
 
 button {
-  height: 1.6rem;
+  height: 1.4rem;
   font-size: 28rpx;
   background: #7AB851;
   color: #fff;
   border-radius: 20rpx;
   width: 100%;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
+}
+
+.error-warn{
+  color: red;
+  clear: both;
+  text-align: center;
 }

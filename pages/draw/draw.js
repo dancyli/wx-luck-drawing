@@ -20,7 +20,10 @@ Page({
     hiddenModal: true,//弹框是否隐藏
     detail: "", //弹框内容
     noLuck: false,
-    isEnd: false
+    isEnd: false,
+    showForm: false,
+    formWarn: "",
+    validate: true
   },
 
   /**
@@ -121,8 +124,60 @@ Page({
         detail: prize
       })
     }
-    
+  },
 
+  showForm: function() {
+    this.setData({
+      showForm: true,
+      isEnd: false
+    })
+  },
+  formSubmit: function(e)
+  {
+    console.log(e)
+    var data = e.detail.value;
+    var warn = "";
+
+    if(!data.name)
+    {
+      warn = "请填写姓名";
+      this.setData({
+        formWarn: warn,
+        validate: false
+      })
+      return false;
+    }
+    if (!data.phone) {
+      warn = "请填写手机号码";
+      this.setData({
+        formWarn: warn,
+        validate: false
+      })
+      return false;
+    }
+    if (data.phone && !/^[1][3,4,5,6,7,8][0-9]{9}$/.test(data.phone))
+    {
+      warn = "手机号码格式错误";
+      this.setData({
+        formWarn: warn,
+        validate: false
+      })
+      return false;
+    }
+    if(!data.address)
+    {
+      warn = "请填写地址";
+      this.setData({
+        formWarn: warn,
+        validate: false
+      })
+      return false;
+    }
+    
+    this.setData({
+      validate: true,
+      showForm: false
+    })
   }
 
 })
