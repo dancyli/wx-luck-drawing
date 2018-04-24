@@ -1,0 +1,18 @@
+<view class='container'>
+
+  <image src="../../images/draw_bg.png" bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" ></image>
+  <image class='turntable' src="../../images/turntable.png"></image>
+  <image class='draw-btn' src="../../images/draw_btn.png"></image>
+
+  <view class='drawing-text'>
+    <view>点击<text>抽奖</text>即可</view>
+    <view>动动手指头，大奖带回家</view>
+  </view>
+
+  <view class='activity-description'>
+    <view class='activity-description-title'>活动说明:</view>
+    <view>1. 每人每天有一次参与抽奖机会。</view>
+    <view>2. 每天分享活动增加一次抽奖机会。</view>
+    <view>3. 关注“爱易生活”微信公众号，每天增加一次抽奖机会。</view>
+  </view>
+</view>

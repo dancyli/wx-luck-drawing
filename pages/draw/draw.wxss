@@ -1,0 +1,40 @@
+.turntable, .draw-btn, .drawing-text, .activity-description {
+  position: absolute;
+}
+
+.turntable{
+  top: 25%;
+  width: 280px;
+  height: 280px;
+}
+
+.draw-btn{
+  top: 39%;
+  width: 58px;
+  height: 70px;
+}
+
+.drawing-text{
+  text-align: center;
+  font-size: 12px;
+  top: 67.5%;
+  font-weight: bold;
+  color: #333;
+}
+.drawing-text text{
+  color:#C8000B;
+}
+
+.activity-description{
+  font-size: 22rpx;
+  bottom: 14.5%;
+  left: 24%;
+  width: 50%;
+  color: #CF6804;
+  /* font-weight: bold; */
+  line-height: 16px;
+}
+.activity-description-title{
+  text-align: center;
+}
+

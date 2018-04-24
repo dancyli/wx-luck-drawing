@@ -11,7 +11,7 @@
     <text class="user-motto">{{motto}}</text>
   </view> -->
   <image class='home-bg' bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" src="../../images/home_bg.png"></image> 
-  <image class='join_btn' src="../../images/join_btn.png"></image>
+  <image class='join_btn' bindtap="joinDraw" src="../../images/join_btn.png"></image>
   <image class='details_btn' src="../../images/details_btn.png"></image>
 </view>
 
