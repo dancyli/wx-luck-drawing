@@ -5,10 +5,6 @@ const app = getApp()
 
 Page({
   data: {
-    // motto: 'Hello World',
-    // userInfo: {},
-    // hasUserInfo: false,
-    // canIUse: wx.canIUse('button.open-type.getUserInfo')
     imagewidth: 0,//缩放后的宽 
     imageheight: 0//缩放后的高 
   },

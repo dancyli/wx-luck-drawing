@@ -1,8 +1,8 @@
 <view class='container'>
 
-  <image src="../../images/draw_bg.png" bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" ></image>
-  <image class='turntable' src="../../images/turntable.png"></image>
-  <image class='draw-btn' src="../../images/draw_btn.png"></image>
+  <image src="../../images/draw_bg.png" bindload="imageLoad" style="height: {{imageheight}}px;" ></image>
+  <image class='turntable'  animation="{{animationData}}"  src="../../images/turntable.png"></image>
+  <image class='draw-btn'  bindtap="start" src="../../images/draw_btn.png"></image>
 
   <view class='drawing-text'>
     <view>点击<text>抽奖</text>即可</view>
@@ -15,4 +15,33 @@
     <view>2. 每天分享活动增加一次抽奖机会。</view>
     <view>3. 关注“爱易生活”微信公众号，每天增加一次抽奖机会。</view>
   </view>
+
+  <view wx:if="{{isEnd}}" class='modal-result' style="height: {{imageheight}}px;">
+    <view class='modal-result-content'>
+      <image class='modal-result-image' src="../../images/modal_bg_1.png"></image>
+      <view wx:if="{{noLuck}}" class='modal-result-text'>
+        <view>很遗憾，未抽中奖哦！</view>
+        <view>今日抽奖次数已用完，明天再来吧！</view>
+      </view>
+      <view wx:else class='modal-result-text is-luck'>
+        <view>亲，恭喜你获得</view>
+        <view class='prize'>{{detail}}</view>
+        <view class='btn-area'>
+          <image src="../../images/take_prize_btn.png"></image>
+          <view class='btn-text'>立即领奖</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class='modal-result-luck' style="height: {{imageheight}}px;">
+    <view class='modal-result-content'>
+      <image class='modal-result-image' src="../../images/modal_bg_1.png"></image>
+      <view class='modal-result-text'>
+        <view>很遗憾，未抽中奖哦！</view>
+        <view>今日抽奖次数已用完，明天再来吧！</view>
+      </view>
+    </view>
+  </view> -->
+  
 </view>

@@ -1,23 +1,23 @@
-.turntable, .draw-btn, .drawing-text, .activity-description {
+.turntable, .draw-btn, .drawing-text, .activity-description, .modal-result-content {
   position: absolute;
 }
 
 .turntable{
   top: 25%;
-  width: 280px;
-  height: 280px;
+  width: 450rpx;
+  height: 450rpx; 
 }
 
 .draw-btn{
-  top: 39%;
-  width: 58px;
-  height: 70px;
+  top: 38%;
+  width: 96rpx;
+  height: 120rpx;
 }
 
 .drawing-text{
   text-align: center;
-  font-size: 12px;
-  top: 67.5%;
+  font-size: 24rpx;
+  top: 66%;
   font-weight: bold;
   color: #333;
 }
@@ -27,14 +27,64 @@
 
 .activity-description{
   font-size: 22rpx;
-  bottom: 14.5%;
+  bottom: 13%;
   left: 24%;
   width: 50%;
   color: #CF6804;
   /* font-weight: bold; */
-  line-height: 16px;
+  line-height: 32rpx;
 }
 .activity-description-title{
   text-align: center;
 }
+.modal-result, .modal-result-luck{
+  background: rgba(0, 0, 0, 0.5); 
+  width:100%;
+  position: absolute;
+  /* display: none;  */
+}
 
+/* .modal-result-luck{
+   display: block;
+} */
+
+.modal-result-content {
+  width: 65%;
+  height: 30%;
+  left: 15%;
+  top: 13%;
+}
+
+.modal-result image{
+  width: 100%;
+  height: 100%;
+}
+
+.modal-result-text {
+  position: absolute;
+  top: 45%;
+  font-size: 32rpx;
+  text-align: center;
+  padding: 20rpx;
+}
+
+.is-luck{
+  left: 25%;
+}
+
+.prize{
+  color: red;
+}
+
+.btn-area{
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+
+.btn-text{
+  position: relative;
+  top: -57rpx;
+  font-size: 28rpx;
+  color: #fff;
+}

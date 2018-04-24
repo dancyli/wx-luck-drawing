@@ -1,9 +1,9 @@
 .activity-description, .prizes-list {
   position: absolute;
-  font-size: 12px;
+  font-size: 24rpx;
   font-weight: bold;
   width: 52%;
-  line-height: 20px;
+  line-height: 40rpx;
   left: 26%;
 }
 
@@ -18,7 +18,7 @@
 .back-btn{
   position: absolute;
   color: #fff;
-  font-size: 14px;
+  font-size: 28rpx;
   font-weight: bold;
   top: 6.2%;
   left: 9%;
