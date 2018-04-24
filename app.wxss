@@ -11,3 +11,18 @@
 image {
   width: 100%;
 }
+
+.require-label{
+  color: #e61717;
+  vertical-align: middle; 
+}
+
+input{
+  background: #ACD598;
+  border-radius: 20rpx; 
+  padding-left: 8rpx;
+}
+
+.section{
+  margin-bottom: 16rpx;
+}

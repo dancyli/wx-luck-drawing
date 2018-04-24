@@ -60,7 +60,7 @@
   height: 100%;
 }
 
-.modal-result-text {
+.modal-result-text, .modal-result-form {
   position: absolute;
   top: 45%;
   font-size: 32rpx;
@@ -87,4 +87,33 @@
   top: -57rpx;
   font-size: 28rpx;
   color: #fff;
+}
+
+.modal-result-form{
+  text-align: left;
+  padding-top: 40rpx;
+  padding-left: 50rpx;
+  font-size: 28rpx;
+}
+
+input{
+  float: right;
+  margin-left: 12rpx;
+  width: 68%;
+  margin-top: -6rpx;
+}
+
+.form-btn-area{
+  width: 70%;
+  float: right;
+}
+
+button {
+  height: 1.6rem;
+  font-size: 28rpx;
+  background: #7AB851;
+  color: #fff;
+  border-radius: 20rpx;
+  width: 100%;
+  line-height: 1.6rem;
 }

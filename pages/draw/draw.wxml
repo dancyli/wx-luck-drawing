@@ -34,14 +34,29 @@
     </view>
   </view>
 
-  <!-- <view class='modal-result-luck' style="height: {{imageheight}}px;">
+   <view class='modal-result-luck' style="height: {{imageheight}}px;">
     <view class='modal-result-content'>
       <image class='modal-result-image' src="../../images/modal_bg_1.png"></image>
-      <view class='modal-result-text'>
-        <view>很遗憾，未抽中奖哦！</view>
-        <view>今日抽奖次数已用完，明天再来吧！</view>
+      <view class='modal-result-form'>
+        <form bindsubmit="formSubmit" bindreset="formReset">
+          <view class="section">
+            <input name="input" placeholder="" />
+            <text class="section__title"><text class='require-label'>*</text> 姓 名：</text>
+          </view>
+          <view class="section">
+            <input name="input" placeholder="" />
+            <text class="section__title"><text class='require-label'>*</text> 手 机：</text>
+          </view>
+          <view class="section">
+            <input name="input" placeholder="" />
+            <text class="section__title"><text class='require-label'>*</text> 地 址：</text>
+          </view>
+          <view class="form-btn-area">
+            <button formType="submit">完成</button>
+          </view>
+        </form>
       </view>
     </view>
-  </view> -->
+  </view> 
   
 </view>
