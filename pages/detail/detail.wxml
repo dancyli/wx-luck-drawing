@@ -1,0 +1,23 @@
+<view class='container'>
+
+  <image src="../../images/detail_bg.png" bindload="imageLoad" style="width: {{imagewidth}}px; height: {{imageheight}}px;" ></image>
+  <!-- <image class='turntable' src="../../images/turntable.png"></image>
+  <image class='draw-btn' src="../../images/draw_btn.png"></image> -->
+
+    <view class='prizes-list'>
+    <view>一等奖：iPhoneX 1台</view>
+    <view>二等奖：海尔智能对开门冰箱 2台</view>
+    <view>三等奖：小米电动滑板车 5台</view>
+    <view>四等奖：美的电饭煲 5台</view>
+    <view>五等奖：床上四件套 10件</view>
+    <view>六等奖：现金红包5元 200个</view>
+  </view> 
+
+  <view class='activity-description'>
+    <view>1. 每人每天有一次参与抽奖机会。</view>
+    <view>2. 每天分享活动增加一次抽奖机会。</view>
+    <view>3. 关注“爱易生活”微信公众号，每天增加一次抽奖机会。</view>
+  </view> 
+
+  <view class='back-btn' bindtap='backHome'>返 回</view>
+</view>

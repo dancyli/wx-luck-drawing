@@ -24,7 +24,13 @@ Page({
 
   joinDraw: function() {
     wx.navigateTo({
-      url: '../draw/draw',
+      url: '../draw/draw'
+    })
+  },
+
+  activeDetail: function() {
+    wx.navigateTo({
+      url: '../detail/detail'
     })
   }
   
