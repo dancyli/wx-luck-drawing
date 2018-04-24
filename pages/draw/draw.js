@@ -93,11 +93,14 @@ Page({
       console.log(luck[deg])
       this.setData({
         animationData: animation.export(),
-        isEnd: true
+        // isEnd: true
       })
-
-      _this.getDrawResult(luck[deg]);
-      
+      setTimeout(function(){
+        _this.setData({
+          isEnd: true
+        })
+        _this.getDrawResult(luck[deg]);
+      }, 3600)
     }
     
     
