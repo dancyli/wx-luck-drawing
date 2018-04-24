@@ -3,7 +3,7 @@
   font-size: 24rpx;
   font-weight: bold;
   width: 52%;
-  line-height: 40rpx;
+  line-height: 36rpx;
   left: 26%;
 }
 
